@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/b6a435b5-d95e-4587-8233-53402dfdee50)
+
+<h1 align="center">Site-1 | Building-1 Diagram</h1> 
+
 <h1 align="center">Task 1 Building 1</h1> 
 
 - Create VLANs on site1 switches according to diagram.  
