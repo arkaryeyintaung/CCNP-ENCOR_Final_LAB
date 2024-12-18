@@ -1,6 +1,6 @@
 # Create VLANs on site1 switches according to diagram.  
 
-## Creating VLAN:
+## Creating VLAN on AS1
 ```
 AS1(config)#vlan 10
 AS1(config-vlan)#name GREEN
@@ -14,7 +14,7 @@ AS1(config-vlan)#name RED
 
 ---
 
-## Assigning VLAN to an Interface:
+## Assigning VLAN in interface on AS1
 ```
 AS1(config)#interface e0/2
 AS1(config-if)#switchport mode access
