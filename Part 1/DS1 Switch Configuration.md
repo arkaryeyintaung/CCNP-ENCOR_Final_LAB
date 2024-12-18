@@ -40,3 +40,27 @@ DS1(config-if-range)#switchport trunk native vlan 999
 
 ## Inter-VLAN Routing Configuration
 
+```
+DS1(config)#ip routing
+DS1(config)#int vlan 10
+DS1(config-if)#ip add 10.0.0.1 255.255.255.0
+DS1(config-if)#int vlan 11
+DS1(config-if)#ip add 10.0.1.1 255.255.255.0
+DS1(config-if)#int vlan 12
+DS1(config-if)#ip add 10.0.2.1 255.255.255.0
+DS1(config-if)#int vlan 13
+DS1(config-if)#ip add 10.0.3.1 255.255.255.0
+DS1(config-if)#exit
+DS1(config)#int e0/0
+DS1(config-if)#description DS1_TO_CS
+DS1(config-if)#no switchport
+DS1(config-if)#ip add 10.0.255.14 255.255.255.252
+```
+## Root Guard
+
+```
+DS1(config)#interface po1
+DS1(config-if)#spanning-tree guard root
+```
+
+
